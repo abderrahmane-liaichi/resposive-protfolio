@@ -1,0 +1,259 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+span{
+    color: green;
+}
+header{
+    height: 100vh;
+    background-color: antiquewhite;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: auto;
+    align-items: center;
+    padding: 10px;
+}
+header nav ul {
+    display: flex;
+}
+header nav ul a{
+    margin: 0 10px;
+    font-size: 17px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 510;
+}
+header nav .logo a{
+    font-size: 25px;
+    font-weight: 900;
+}
+header .nav_bar{
+    background-color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.178);
+}
+.header_content{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    max-width: 1100px;
+    margin: 50px auto;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 15px;
+}
+.header_content img{
+    max-width: 450px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.header_content .content_text p span{
+    color: green;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.header_content .content_text h1{
+    font-size: 60px;
+    color: black;
+    padding: 15px 0px;
+}
+.header_content .content_text p{
+    font-size: 20px;
+}
+.header_content .content_text .social{
+    margin: 20px 0px;
+    padding: 0 10px;
+}
+.header_content .content_text .social a i{
+    background-color: black;
+    padding: 10px;
+    color: white;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+
+}
+.header_content .content_text .social a i:hover{
+    background-color: black;
+    padding: 10px;
+    color: white;
+    border-radius: 50%;
+    transform: scale(0.8);
+}
+.header_content .content_text .btn_about{
+    padding: 10px 15px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    margin: 10px 10px;
+    transition: all 0.3s ease;
+}
+
+.header_content .content_text .btn_about:hover{
+    box-shadow: 0px 0px 3px rgb(0, 0, 0);
+}
+.header_content .content_text{
+    padding: 15px 0px;
+}
+.contenier{
+    max-width: 1100px;
+    margin: auto;
+}
+.contenier h1{
+    text-align: center;
+    font-size: 30px;
+
+}
+.contenier hr{
+    width: 100px;
+    margin: 5px auto;
+    height: 3px;
+    border: none;
+    background-color:green;
+}
+.about_content{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 30px 10px;
+    column-gap: 50px;
+}
+.about_content .col1 h3{
+    font-size: 25px;
+}
+.about_content .col1 p{
+    margin-top: 20px;
+    font-size: 17px;
+}
+.about_content .col2 p{
+    font-size: 17px;
+    margin-bottom: 2px;
+}
+.about_content .col2 b{
+    font-size: 17px;
+    font-weight: 900;
+    
+
+}
+main{
+    height: 100vh;
+    background-color: white;
+}
+@media (max-width:360px){
+    header{
+        margin-bottom: 50px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:600px){
+    .header_content{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .header_content .content_text{
+        text-align: center;
+
+    }
+    .header_content .content_text h1 {
+        font-size: 50px;
+    }
+    .header_content .content_right img{
+        max-width: 350px;
+    }
+    #home .nav_bar nav{
+        display: block;
+    }
+    #home .nav_bar nav .logo{
+        padding: 0;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    #home .nav_bar nav ul li a{
+        font-size: 15px;
+        margin: 0 10px;
+    }
+    #home .nav_bar nav ul{
+        align-items: center;
+        justify-content: center;
+    }
+    #home .header_content p span{
+        padding: 0;
+        margin: 0;
+    }
+    main .about_content{
+        display: flex;
+        flex-direction: column;
+    }
+    main .about_content .col2{
+        margin-top: 30px;
+    }
+    main .about_content .col1 p{
+        margin-bottom: 0px;
+    }
+    main .about_content .col2 p{
+        margin-bottom: 2px;
+    }
+
+}
+@media (min-width:600px) and (max-width:888px){
+    .header_content{
+        display: flex;
+        flex-direction: column;
+    }
+    .content_text{
+        text-align: center;
+    }
+}

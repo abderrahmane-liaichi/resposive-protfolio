@@ -147,9 +147,6 @@ main{
     background-color: white;
 }
 @media (max-width:360px){
-    header{
-        margin-bottom: 50px;
-    }
 }
 
 
@@ -199,6 +196,10 @@ main{
 
 
 @media (max-width:600px){
+    header{
+        height: 100%;
+        width: 100%;
+    }
     .header_content{
         display: flex;
         flex-direction: column-reverse;
@@ -255,5 +256,9 @@ main{
     }
     .content_text{
         text-align: center;
+    }
+    header{
+        height: 100%;
+        width: 100%;
     }
 }
